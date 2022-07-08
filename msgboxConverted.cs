@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,17 @@ namespace PDF_Resume_Creator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.IO.File.Move("C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug\resume.pdf", newNameFullPath);
+            const string source = @"C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug\resume.pdf";
+            const string destination = @"C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug\NARCEDA_BERNARD.pdf";
+
+            try
+            {
+                File.Move(source, destination);
+            }
+            catch
+            {
+
+            }
         }
     }
 }

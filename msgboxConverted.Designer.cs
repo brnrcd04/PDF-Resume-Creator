@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lblLogo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,16 +59,16 @@
             this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblLogo.Click += new System.EventHandler(this.lblLogo_Click);
             // 
-            // button1
+            // btnOK
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(158, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnOK.Location = new System.Drawing.Point(158, 162);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(70, 38);
+            this.btnOK.TabIndex = 2;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.button1_Click);
             // 
             // msgboxConverted
             // 
@@ -76,7 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(388, 223);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.lblLogo);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlDark;
@@ -93,6 +93,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLogo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOK;
     }
 }
