@@ -78,7 +78,7 @@
             // 
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBrowse.Location = new System.Drawing.Point(77, 280);
+            this.btnBrowse.Location = new System.Drawing.Point(77, 284);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(173, 50);
             this.btnBrowse.TabIndex = 3;
@@ -113,7 +113,7 @@
             // 
             this.btnConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConvert.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnConvert.Location = new System.Drawing.Point(385, 280);
+            this.btnConvert.Location = new System.Drawing.Point(385, 284);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(173, 50);
             this.btnConvert.TabIndex = 6;
@@ -126,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(638, 372);
+            this.ClientSize = new System.Drawing.Size(638, 378);
             this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.txtBoxSelected);
             this.Controls.Add(this.lblSelected);
@@ -135,6 +135,7 @@
             this.Controls.Add(this.lblAppName);
             this.Controls.Add(this.lblLogo);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JSON to PDF Resume Creator";
             this.ResumeLayout(false);
             this.PerformLayout();

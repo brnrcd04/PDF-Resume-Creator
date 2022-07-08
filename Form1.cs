@@ -38,14 +38,22 @@ namespace PDF_Resume_Creator
             InitializeComponent();
             ProcessStartInfo ps = new ProcessStartInfo();
             ps.FileName = "cmd.exe";
-            ps.WindowStyle = ProcessWindowStyle.Normal;
-            ps.Arguments = @"/k md C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug";
+            ps.WindowStyle = ProcessWindowStyle.Hidden;
+            ps.Arguments = @"/c resume export resume.pdf --theme stackoverflow";
             Process.Start(ps);
+
+            msgboxConverted m = new msgboxConverted();
+            m.Show();
         }
 
         private void txtBoxSelected_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void txtBoxFilename_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

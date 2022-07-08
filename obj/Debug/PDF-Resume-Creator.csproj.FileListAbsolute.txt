@@ -9,3 +9,4 @@ C:\Users\bern\source\repos\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.cspro
 C:\Users\bern\source\repos\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.csproj.CoreCompileInputs.cache
 C:\Users\bern\source\repos\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.exe
 C:\Users\bern\source\repos\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.pdb
+C:\Users\bern\source\repos\PDF-Resume-Creator\obj\Debug\PDF_Resume_Creator.msgboxConverted.resources
