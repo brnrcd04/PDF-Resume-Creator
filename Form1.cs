@@ -39,8 +39,13 @@ namespace PDF_Resume_Creator
             ProcessStartInfo ps = new ProcessStartInfo();
             ps.FileName = "cmd.exe";
             ps.WindowStyle = ProcessWindowStyle.Normal;
-            ps.Arguments = @"C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug /c export resume.pdf --kendall";
+            ps.Arguments = @"/k md C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug";
             Process.Start(ps);
+        }
+
+        private void txtBoxSelected_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
