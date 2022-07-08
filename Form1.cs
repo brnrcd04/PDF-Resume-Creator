@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace PDF_Resume_Creator
 {
@@ -25,12 +26,21 @@ namespace PDF_Resume_Creator
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             this.openFDJSON.Filter = "|*.json";
-            this.openFDJSON.ShowDialog();
 
             if (openFDJSON.ShowDialog() == DialogResult.OK)
             {
                 txtBoxSelected.Text = System.IO.Path.GetFullPath(openFDJSON.FileName);
             }
+        }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            ProcessStartInfo ps = new ProcessStartInfo();
+            ps.FileName = "cmd.exe";
+            ps.WindowStyle = ProcessWindowStyle.Normal;
+            ps.Arguments = @"C:\Users\bern\source\repos\PDF-Resume-Creator\bin\Debug /c export resume.pdf --kendall";
+            Process.Start(ps);
         }
     }
 }

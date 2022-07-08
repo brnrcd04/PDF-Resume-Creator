@@ -78,7 +78,7 @@
             // 
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBrowse.Location = new System.Drawing.Point(77, 332);
+            this.btnBrowse.Location = new System.Drawing.Point(77, 276);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(173, 50);
             this.btnBrowse.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             this.lblSelected.AutoSize = true;
             this.lblSelected.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lblSelected.Location = new System.Drawing.Point(73, 296);
+            this.lblSelected.Location = new System.Drawing.Point(73, 240);
             this.lblSelected.Name = "lblSelected";
             this.lblSelected.Size = new System.Drawing.Size(151, 20);
             this.lblSelected.TabIndex = 4;
@@ -102,8 +102,9 @@
             // 
             // txtBoxSelected
             // 
-            this.txtBoxSelected.Location = new System.Drawing.Point(230, 293);
+            this.txtBoxSelected.Location = new System.Drawing.Point(230, 237);
             this.txtBoxSelected.Name = "txtBoxSelected";
+            this.txtBoxSelected.ReadOnly = true;
             this.txtBoxSelected.Size = new System.Drawing.Size(328, 26);
             this.txtBoxSelected.TabIndex = 5;
             // 
@@ -111,19 +112,20 @@
             // 
             this.btnConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConvert.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnConvert.Location = new System.Drawing.Point(385, 332);
+            this.btnConvert.Location = new System.Drawing.Point(385, 276);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(173, 50);
             this.btnConvert.TabIndex = 6;
             this.btnConvert.Text = "Convert to PDF";
             this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(638, 450);
+            this.ClientSize = new System.Drawing.Size(638, 362);
             this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.txtBoxSelected);
             this.Controls.Add(this.lblSelected);
